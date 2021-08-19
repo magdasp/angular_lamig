@@ -1,0 +1,136 @@
+<h4 class="ml-5 mb-3">
+    Matematyka prawie bez wyliczeń
+    <span class="badge ml-3">7</span>
+  </h4>
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">1. W ciemnym pokoju.</h5>
+      <p>
+          Wszedłem do pokoju, by wziąć z szafy swoje buciki i skarpetki. Spała tam siostra i było zupełnie ciemno. 
+          Wiedziałem dobrze w którym miejscu w szafie znajdują się moje trzy pary bucików - o różnych fasonach i 12 par 
+          skarpetek - czarnych i brązowych. Nie chciałem zapalić światła, żeby nie zbudzić siostry.
+          Stwierdziłem, że rzeczywiście buciki i skarpetki znajdują się na swoim miejscu, lecz - trzeba przyznać, w nieładzie, 
+          po prostu dwie kupy - jedna złożona z 6 bucików, a druga - z 24 skarpetek.<br>
+          Jaką możliwie najmniejszą ilość bucików i skarpetek powinienem wynieść z ciemnego pokoju do jasnego, aby zapewnić 
+          sobie parę bucików jednego fasonu i parę skarpetek tego samego koloru, przy czym fason obuwia i kolor skarpetek były mi zupełnie obojętne ?
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(1)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden1">
+          Cztery buciki i trzy skarpetki.
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">2. Jabłka.</h5>
+      <p>
+          W skrzyni zmieszane są trzy gatunki jabłek. Jaką najmniejszą ilość jabłek należy wyjąć ze skrzyni na "chybił, trafił", 
+          nie zaglądając do niej, aby wśród wyjętych jabłek były:<br>
+          1) przynajmniej dwa jabłka tego samego gatunku,<br>
+          2) przynajmniej trzy jabłka tego samego gatunku ?
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(2)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden2">
+          1)  4 jabłka, 2)  7 jabłek. 
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">3. Prognoza pogody.</h5>
+      <p>
+          Jeśli o godzinie 24 pada deszcz, czy można spodziewać się, że po 72 godzinach będzie słoneczna pogoda ?
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(3)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden3">
+          Nie, gdyż po 72 godzinach, a więc po trzech dobach, będzie znów godzina 24, a słońce, jak wiadomo, 
+          nie świeci w nocy (chyba, że znajdziemy się za kołem podbiegunowym).
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">4. Znajdź rówieśnice..</h5>
+      <p>
+          Do klasy 5 uczęszczają 4 dziewczynki: Mania, Tania, Pania i Sania. Dwie z nich są rówieśnicami. Mania byłaby starsza od Tani, 
+          gdyby nie była młodsza od Sani. Pania byłaby młodsza od Tani, gdyby nie była starsza od Sani.<br>
+          Kto jest rówieśnicą Tani: Mania, Pania, czy Sania ?
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(4)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden4">
+          Z tekstu wynika, że Mania jest młodsza od Sani, a Pania jest starsza od Sani. W kolejności ich wieku można więc ustalić następujący szereg: 
+          Mania - Sania - Pania. Czy najmłodsza z nich, Mania, może być rówieśnicą Tani ? Nie, gdyż w tym przypadku nie byłby spełniony drugi warunek. 
+          A czy najstarsza z tej trójki, Pania, mogłaby być rówieśnicą Tani ? Też nie, gdyż w tym przypadku nie byłby spełniony pierwszy warunek. 
+          Stąd wniosek, że rówieśnicą Tani była Sania.
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">5. Trzej mędrcy.</h5>
+      <p>
+          Zmęczeni dyskusją i letnim skwarem trzej starożytni filozofowie greccy położyli się, by odpocząć w cieniu drzew ogrodu Akademii i usnęli. 
+          W czasie ich snu figlarze wysmarowali im czoła węglem. Obudziwszy się spojrzeli na siebie nawzajem, wpadli w dobry humor i zaczęli się śmiać. 
+          Nie zdziwiło to żadnego z nich, gdyż każdemu zdawało się, że pozostali dwaj śmieją się z siebie nawzajem.
+          Nagle jeden z mędrców przestał się śmiać, gdyż doszedł do wniosku, że jego czoło jest również wysmarowane węglem. 
+          Jak rozumował ?
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(5)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden5">
+          A rozumował następująco:   Każdy z nas może przypuszczać, że ma czyste czoło. B jest przekonany, że ma czyste czoło i śmieje się z wysmarowanego 
+          czoła mędrca C. Lecz gdyby B widział, że moje czoło jest czyste, zdziwiłby go śmiech C, gdyż w tym przypadku C nie miałby powodu do śmiechu. 
+          Ponieważ B nie dziwi się, uważa widocznie, że C śmieje się ze mnie. Z tego wynika, że i moje czoło jest brudne.
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">6. Motocyklista i jeździec.</h5>
+      <p>
+          Z urzędu pocztowego wysłano na lotnisko motocyklistę po pocztę lotniczą. Samolot przywożący pocztę przyleciał 
+          jednak przed wyznaczonym terminem i przywiezioną pocztę wysłano do urzędu przez konnego posłańca. Po upływie 
+          pół godziny jeździec spotkał motocyklistę, który przejął pocztę i nigdzie nie zatrzymując się wrócił z powrotem. 
+          Motocyklista przybył do urzędu pocztowego na 20 minut przed określonym terminem.<br>
+          O ile minut wcześniej niż zwykle przybył samolot na lotnisko ?
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(6)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden6">
+          Motocyklista znajjdował się w drodze o 20 minut krócej niż zwykle, gdy przebywał całą drogę do lotniska i z powrotem. 
+          Zyskał na czasie, ponieważ nie musiał tym razem dojechać do lotniska. Wymienione 20 minut zajęłaby mu droga od momentu 
+          spotkania z jeźdźcem do lotniska i z powrotem, czyli że na przejazd w jedną stronę motocyklista zużyłby 10 minut. 
+          Wiemy jednak, że motocyklista spotkał się z jeźdźcem po przebyciu przez tego ostatniego 30 minut drogi, a więc w pół godziny 
+          po przybyciu samolotu. Wiemy, że motocyklista wyjechał z urzędu pocztowego we właściwym czasie. Dodając do 30 minut te 10 minut, 
+          które motocyklista zużyłby na dojazd do samego lotniska, dochodzimy do wniosku, że samolot przybyl na lotnisko o 40 minut 
+          wcześniej niz zwykle.
+      </div>
+    </div>
+  </div>
+  
+  <div class="card">
+    <div class="card-body">
+      <h5 class="card-title">7. Sprawa karna.</h5>
+      <p>
+          Nauczycielce szkoły podstawowej w stanie Nowy Jork zginęła portmonetka. Mogło ją ukraść tylko jedno z pięciorga dzieci: Lilian, 
+          Juliet, David, Teo lub Margaret.<br>
+          W czasie śledztwa każde z tych dzieci złożyło 3 zeznania:<br>
+          LILIAN: 1) nie wzięłam portmonetki; 2) nigdy w życiu niczego nie ukradłam; 3) zrobił to Teo.<br>
+          JULIET: 4) nie wzięłam portmonetki; 5) mój ojciec jest dość zamożny, więc mam własną portmonetkę; 6) Margaret wie, kto to zrobił.<br>
+          DAVID: 7) nic nie wiem o kradzieży; 8) nie znałem Margaret przed zapisaniem się do szkoły; 9) zrobił to Teo.<br>
+          TEO: 10) jestem niewinny; 11) zrobiła to Margaret; 12) Lilian kłamie, twierdząc, że ja ukradłem portmonetkę.<br>
+          MARGARET: 13) nie wzięłam portmonetki nauczycielki; 14) zawiniła w tym Juliet; 15) David może za mnie ręczyć, gdyż zna mnie od urodzenia.<br>
+          W czasie dalszego śledztwa każde z dzieci przyznało się, że ze złożonych trzech zeznań, tylko dwa są prawdziwe, a jedno fałszywe.
+          Ustal, kto ukradł portmonetkę.
+      </p>
+      <button type="button" class="btn btn-info" (click)="noHidden(7)">Rozwiązanie</button>
+      <div style="color: darkblue" [hidden]="isHidden7">
+          Jeżeli 3) jest prawdziwe, to 10) i 12) muszą być fałszywe, co zgodnie z warunkami zadania jest niemożliwe. A więc 3) musi być fałszywe 
+          - Teo nie ukradł portmonetki. Jeżeli 3) jest fałszywe, to i 9) musi być fałszywe. Z fałszywości 9) wynika, że 8) jest prawdziwe. 
+          To pociąga za sobą fałszywość 15). Z fałszywości 15) wynika prawdziwość 14). Ukradła więc portmonetkę Juliet. 
+      </div>
+    </div>
+  </div>

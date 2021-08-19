@@ -1,0 +1,53 @@
+<h4 class="ml-5 mb-3">
+  Zadania interaktywne
+</h4>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">1. Osiem gwiazdek.</h5>
+    <p>
+      Na jednym z białych pól na rysunku umieszczona jest gwiazdka. Spróbuj ułożyć na białych polach jeszcze 7 gwiazdek w ten sposób,
+      aby żadne dwie ( z tych ośmiu) nie leżały wzdłuż jakiejkolwiek linii poziomej, pionowej ani też przekątnej.
+      <br> Kliknij na wybranym polu, aby wstawić lub usunąć gwiazdkę.
+    </p>
+    <canvas #myCanvas1 on-click="click1($event)" width="260" height="290">
+    </canvas>
+    <br>
+    <button type="button" class="btn btn-primary mr-2" (click)="check1()">Sprawdź</button>
+    <button type="button" class="btn btn-secondary mr-2" (click)="clear1()">Wyczyść</button>
+    <button type="button" class="btn btn-info" (click)="solve1()">Rozwiązanie</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">2. Rozmieszczenie liczb.</h5>
+    <p>
+      Mamy następujące liczby: 20, 20, 20, 20, 20, 15, 15, 15, 10, 10, 10, 5, 5, 5, 5, 5, 5. Wypełnij nimi kwadraty narysowanej figury
+      w ten sposób, aby ich sumy wzdłuż wszystkich linii prostych zaznaczonych na rysunku równały się 55.
+      <br> Przeciągnij liczby z prawej strony ekranu do odpowiednich kwadratów z lewej strony.
+    </p>
+    <canvas id="can2" #myCanvas2 on-mousedown="mousedown2($event)" on-mouseup="mouseup2($event)" on-mousemove="mousemove2($event)" width="560" height="320">
+    </canvas>
+    <br>
+    <button type="button" class="btn btn-primary mr-2" (click)="check2()">Sprawdź</button>
+    <button type="button" class="btn btn-secondary mr-2" (click)="clear2()">Wyczyść</button>
+    <button type="button" class="btn btn-info" (click)="solve2()">Rozwiązanie</button>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">3. Droga ogrodnika.</h5>
+    <p>
+      Rysunek przedstawia plan niewielkiego sadu, w którym rosną jabłonie (oznaczone na rysunku kropkami). Ogrodnik okopywał kolejno wszystkie drzewa. 
+      Zaczął od kratki oznaczonej gwiazdką i szedł po kolei przez wszystkie - zarówno zajęte przez jabłonie, jak i puste, przechodząc przez każdą tylko raz 
+      i nie przeskakując żadnej z nich. Opuszczał przy tym szare kratki, ponieważ oznaczają one miejsca zajęte przez budynki. Zaznacz drogę ogrodnika.<br>
+      Narysuj kolejne linie proste za pomocą przeciągania wskaźnika myszki.
+    </p>
+    <canvas id="can3" #myCanvas3 on-mousedown="mousedown3($event)" on-mouseup="mouseup3($event)" on-mousemove="mousemove3($event)" width="560" height="320">
+    </canvas>
+    <br>
+    <button type="button" class="btn btn-secondary mr-2" (click)="clear3()">Wyczyść</button>
+    <button type="button" class="btn btn-info" (click)="solve3()">Rozwiązanie</button>
+  </div>
+</div>

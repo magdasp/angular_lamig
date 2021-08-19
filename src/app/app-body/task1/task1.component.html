@@ -1,0 +1,157 @@
+<h4 class="ml-5 mb-3">
+  Zadania wymagające pomysłowości
+  <span class="badge ml-3">8</span>
+</h4>
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">1. Ile części składowych ?</h5>
+    <p>
+      W oddziale tokarskim fabryki toczy się części składowe maszyn z przygotowanych kawałków ołowiu. Z każdego kawałka wytwarza
+      się jedną część. Odpadki z obróbki każdych sześciu części składowych można przetopić i otrzymać w ten sposób kawałek
+      ołowiu, z którego możemy dodatkowo wyprodukować jedną część maszyny. Ile części składowych można wykonać w ten sposób
+      z 36 kawałków ołowiu ?
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(1)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden1">
+      43 elementy. 36 + 36/6 +1, gdyż odpadki pochodzące z ostatnich sześciu kawałków dają nam jeszcze jeden dodatkowy kawałek
+      ołowiu.
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">2. Krzesła w sali.</h5>
+    <p>
+      W kwadratowej sali do tańca trzeba ustawić pod ścianami 10 krzeseł w ten sposób, aby przy każdej ścianie była jednakowa ich
+      ilość.
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(2)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden2">
+      <img src="../../assets/images/sala.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">3. Cztery proste.</h5>
+    <div class="media">
+      <img src="../../assets/images/krop1.gif">
+      <div class="media-body">
+        <p>
+          <br> 9 kropek tworzy kwadrat jak na rysunku. Przeprowadź cztery proste przez wszystkie kropki nie odrywając ołówka.
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info" (click)="noHidden(3)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden3">
+      <img src="../../assets/images/krop2.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">4. W czasie przypływu (zagadka - żarcik).</h5>
+    <p>
+      W pobliżu brzegu stoi okręt ze spuszczoną po burcie drabinką linową. Drabinka ma 10 stopni, a odległość między nimi wynosi
+      30 cm. Najniższy stopień styka się z powierzchnią wody. Ocean jest tego dnia bardzo spokojny, zaczyna się jednak przypływ,
+      który podnosi poziom wody o 15 cm na godzinę. Po ilu godzinach powierzchnia wody dosięgnie trzeciego stopnia drabinki
+      ?
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(4)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden4">
+      Woda nigdy nie dosięgnie trzeciego stopnia, gdyż równocześnie z poziomem wody podnosi się również okręt wraz z drabinką.
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">5.Tarcza zegarowa.</h5>
+    <div class="media">
+      <img src="../../assets/images/zeg1.gif">
+      <div class="media-body">
+        <p>
+          <br> Podziel dwiema prostymi tarczę zegarową na 3 części w ten sposób, aby suma liczb zawartych w każdej części była
+          jednakowa.
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info m-3" (click)="noHidden(5)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden5">
+      <img src="../../assets/images/zeg2.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">6. Z trzech - cztery (zagadka - żarcik).</h5>
+    <div class="media">
+      <img src="../../assets/images/trzy.gif">
+      <div class="media-body">
+        <p>
+          <br> Na stole leżą 3 patyczki. Nie dodając ani jednego patyczka zrób z trzech cztery. Patyczków nie wolno przełamywać.
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info" (click)="noHidden(6)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden6">
+      <img src="../../assets/images/cztery.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">7. Dziwny zegar (chińska łamigłówka).</h5>
+    <p>
+      Mieszkańcowi pewnego domu popsuł się zegar. Posłał po zegarmistrza. - Jestem chory - powiedział zegarmistrz i nie mogę przyjść.
+      Jeżeli jednak naprawa jest nieskomplikowana, przyślę wam mojego terminatora.
+      <br> Okazało się, że trzeba połamane wskazówki zastąpić nowymi.
+      <br> - On to zrobi - powiedział zegarmistrz, sprawdzi mechanizm zegara i dobierze wskazówki.
+      <br> Terminator udał się pod wskazany adres. Zmrok już zapadł, gdy skończył sprawdzać mechanizm. Pospiesznie więc założył
+      nowe wskazówki i ustawił je według swojego zegarka: dużą na 12, a małą - na 6. Była szósta wieczorem. Zaledwie wrócił
+      do swej pracowni, zadzwonił telefon. Chłopiec podniósł słuchawkę i usłyszał zirytowany głos klienta:
+      <br> - Zegar jest źle naprawiony, wskazuje niewłaściwy czas.
+      <br> Terminator zdziwiony tą wiadomością, udał się do klienta. Na zegarze było po ósmej. Wyjął swój zegarek i pokazał go
+      klientowi:
+      <br> - Proszę sprawdzić. Wasz zegar chodzi z dokładnością do jednej sekundy.
+      <br> Klient musiał przyznać, że jego zegar wskazywał w tej chwili właściwy czas.
+      <br> Nazajutrz rano klient znów zadzwonił i powiedział, że wskazówki zegara widocznie oszalały, gdyż poruszają się po tarczy,
+      jak im się podoba. Terminator pobiegł do klienta. Było po siódmej. Sprawdzając czas wedlug swojego zegara, rozzłościł
+      sie nie na żarty.
+      <br> - Kpiny sobie urządzacie. Wasz zegar wskazuje właściwy czas.
+      <br> Zegar rzeczywiście wskazywał dokładny czas. Oburzony terminator zamierzał już odejść, lecz gospodarz zatrzymał go.
+      Po kilku minutach zrozumieli przyczynę tych nieprawdopodobnych wydarzeń.
+      <br> Co było przyczyną tych nieporozumień ?
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(7)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden7">
+      Terminator założył wskazówkę minutową na oś godzinową, a wskazówkę godzinową - na oś minutową. Pierwszy raz terminator powrócił
+      do klienta w 2 godziny 10 minut po nastawieniu zegara na 6 wieczór. Duża wskazówka przesunęła się od 12 do 2, mała
+      zaś wykonała dwa pełne obroty i przeszła jeszcze 10 minut. Zegar pokazywał więc w tym momencie dokładny czas. Na drugie
+      wezwanie, rankiem następnego dnia, terminator przyszedł po 13 godzinach 05 minutach od chwili nastawienia zegara na
+      6 godzinę. Duża wskazówka przeszla 13 godzin i doszła do cyfry 1, mała wykonała 13 pełnych obrotów i przeszła jeszcze
+      5 minut dochodząc do cyfry 7. Dlatego też i w tym drugim przypadku zegar wskazywał dokładny czas.
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">8. Ile mam lat ?</h5>
+    <p>
+      Kiedy mój ojciec miał 31 lat, ja miałem 8 lat, a teraz ojciec jest dwa razy starszy ode mnie. Ile mam obecnie lat?
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(8)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden8">
+      23 lata. Różnica lat ojca i syna wynosi 23; syn powinien mieć 23 lata, aby ojciec miał 2 razy tyle.
+    </div>
+  </div>
+</div>

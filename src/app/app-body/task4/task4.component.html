@@ -1,0 +1,172 @@
+<h4 class="ml-5 mb-3">
+  Geometria przy pomocy zapałek
+  <span class="badge ml-3">8</span>
+</h4>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">1. Ile zapałek należy usunąć ?</h5>
+    <div class="media">
+      <img src="../../assets/images/zap1.gif">
+      <div class="media-body">
+        <p>
+          <br> Na rysunku ułożono 16 jednakowych kwadratów. Ile występuje na tym rysunku wszystkich kwadratów rozmaitych wielkości
+          ?
+          <br> Jaką najmniejszą liczbę zapałek trzeba usunąć, aby w pozostałej figurze wcale nie występowały kwadraty ?
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info m-2" (click)="noHidden(1)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden1">
+      <div class="media">
+        <img src="../../assets/images/zap1r.gif">
+        <div class="media-body">
+          <p>
+            <br> Na rysunku występuje 30 kwadratów rozmaitych wielkości.
+            <br> Trzeba usunąć przynajmniej 9 zapałek, aby w pozostałej figurze wcale nie występowały kwadraty (patrz rysunek
+            poniżej).
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">2. Twierdza (zagadka - żarcik).</h5>
+    <div class="media">
+      <img src="../../assets/images/zap2.gif">
+      <div class="media-body">
+        <p>
+          <br> Z 16 zapałek ułożono "plan" twierdzy otoczonej głębokim rowem.
+          <br> Jak można dostać się do twierdzy za pomocą dwóch desek (zapałek), których długość równa się dokładnie szerokości
+          rowu ?
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info m-2" (click)="noHidden(2)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden2">
+      <img src="../../assets/images/zap2r.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">3. Fasada domu.</h5>
+    <div class="media">
+      <img src="../../assets/images/zap3.gif">
+      <div class="media-body">
+        <p>
+          <br> "Fasadę domu" zbudowano z 11 zapałek. Po przełożeniu 2 zapałek można otrzymać figurę złożoną z 11 kwadratów.
+          <br> W jaki sposób ?
+        </p>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info" (click)="noHidden(3)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden3">
+      <img src="../../assets/images/zap3r.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">4. Trójkąty.</h5>
+    <p>
+      Dla ułożenia jednego trójkąta równobocznego potrzebne są 3 zapałki (łamać zapałek nie wolno). Sześć trójkątów równobocznych
+      jednakowej wielkości można jednak ułożyć już z 12 zapałek.
+      <br> W jaki sposób ?
+      <br> Po ich ułożeniu, przełóż 4 zapałki w ten sposób, aby powstały 3 trójkąty równoboczne, z których tylko dwa będą sobie
+      równe.
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(4)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden4">
+      <img src="../../assets/images/zap4r.gif">
+      <img src="../../assets/images/zap4rr.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">5. Metr (zagadka - żarcik).</h5>
+    <p>
+      Każda zapałka ma długość 4,5 cm. Jak ułożyć z 14 zapałek metr ?
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(5)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden5">
+      <img src="../../assets/images/zap5r.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">6. Plan ogrodu.</h5>
+    <div class="media">
+      <img src="../../assets/images/zap6.gif">
+      <div class="media-body">
+        <p>
+          <br> Z 16 zapałek ułożono kwadrat przedstawiający płot ogrodu. Część powierzchni zajmuje dom ukazany na rysunku w postaci
+          kwadratu z 4 zapałek.
+          <br> Podziel pozostałą część ogrodu 10 zapałkami na 5 części o równych kształtach i polach.
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info m-2" (click)="noHidden(6)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden6">
+      <img src="../../assets/images/zap6r.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">7. Podział na równe części.</h5>
+    <div class="media">
+      <img src="../../assets/images/zap7.gif">
+      <div class="media-body">
+        <p>
+          <br> Rysunek przedstawia kwadrat zbudowany z 16 zapałek.
+          <br> Podziel go 11 zapałkami na 4 części o równych polach w ten sposób, aby każda z nich przylegała do pozostałych
+          trzech części.
+        </p>
+        <br>
+      </div>
+    </div>
+    <button type="button" class="btn btn-info m-2" (click)="noHidden(7)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden7">
+      <img src="../../assets/images/zap7r.gif">
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-body">
+    <h5 class="card-title">8. Kontur figury.</h5>
+    <p>
+      Mamy 12 zapałek, przy czym każdą z nich uważamy za jednostkę długości.
+      <br> Ułóż z tych 12 zapałek figurę, której pole miałoby 3 jednostki kwadratowe.
+    </p>
+    <button type="button" class="btn btn-info" (click)="noHidden(8)">Rozwiązanie</button>
+    <div style="color: darkblue" [hidden]="isHidden8">
+      <div class="media">
+        <img src="../../assets/images/zap8r.gif">
+        <div class="media-body">
+          <p>
+            <br> Z 12 zapałek należy najpierw ułożyć trójkąt prostokątny, którego przyprostokątne składają się z 3 i 4 zapałek,
+            a przeciwprostokątna z 5 zapałek. Pole takiego trójkąta wynosi 1/2 x 3 x 4 = 6 jednostek kwadratowych.
+            <br> Jeśli następnie usuniemy 4 zapałki tworzące kąt prosty i przełożymy je w postaci schodków, jak na rysunku -
+            pole naszego trójkąta zmniejszy się o 3 jednostki kwadratowe. Pole otrzymanej w ten sposób figury, na rysunku
+            zakreskowanej, ma 6 - 3 = 3 jednostki kwadratowe.
+          </p>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>
