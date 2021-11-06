@@ -143,8 +143,8 @@ export class Task5Component implements OnInit {
   }
 
   click1(e: MouseEvent) {
-    var x = e.layerX;
-    var y = e.layerY;
+    var x = e.offsetX;
+    var y = e.offsetY;
     //var coords = "X coords: " + x + ", Y coords: " + y;
     //console.log(coords);
 
@@ -305,9 +305,9 @@ export class Task5Component implements OnInit {
     }
   }
 
-  mousedown2(e :MouseEvent) {
-    var x = e.layerX;
-    var y = e.layerY;
+  mousedown2(e: MouseEvent) {
+    var x = e.offsetX;
+    var y = e.offsetY;
     var i;
     for (i = 0; i < 17; i++) {   // sprawdzenie polozenia myszki
       if (this.t2[i] < x && x < this.t2[i]+22 &&
@@ -322,10 +322,10 @@ export class Task5Component implements OnInit {
    }
   }
 
-  mouseup2(e :MouseEvent) {
+  mouseup2(e: MouseEvent) {
     if (this.licz < 100) {   // sprawdzenie czy wybrano liczbe
-      var x = e.layerX;
-      var y = e.layerY;
+      var x = e.offsetX;
+      var y = e.offsetY;
       var i;
       for (i = 0; i < 17; i++) {
          if (this.t1[i]-5 < x && x < this.t1[i]+25 &&
@@ -343,10 +343,10 @@ export class Task5Component implements OnInit {
     } 
   }
 
-  mousemove2(e :MouseEvent) {
+  mousemove2(e: MouseEvent) {
     this.def = true;
-    var x = e.layerX;
-    var y = e.layerY;
+    var x = e.offsetX;
+    var y = e.offsetY;
     var i;
     for (i = 0; i < 17; i++) {
         if (this.t2[i] < x && x < this.t2[i]+22 &&
@@ -499,9 +499,9 @@ export class Task5Component implements OnInit {
     ctx.closePath();
   }
 
-  mousedown3(e :MouseEvent) {
-    var x = e.layerX;
-    var y = e.layerY;
+  mousedown3(e: MouseEvent) {
+    var x = e.offsetX;
+    var y = e.offsetY;
     var i;
     if (this.ilp < 57) {
       if (this.p3[this.ilp].x-10 < x && x < this.p3[this.ilp].x+15 &&
@@ -511,10 +511,10 @@ export class Task5Component implements OnInit {
     }
   }
 
-  mouseup3(e :MouseEvent) {
+  mouseup3(e: MouseEvent) {
     if (this.ilp < 57 && this.start != null) {
-      var x = e.layerX;
-      var y = e.layerY;
+      var x = e.offsetX;
+      var y = e.offsetY;
       var i;
       for (i = 0; i < 58; i++) {
          if (this.t3[i]-10 < x && x < this.t3[i]+15 &&
@@ -545,10 +545,10 @@ export class Task5Component implements OnInit {
     this.paint3();
   }
 
-  mousemove3(e :MouseEvent) {
+  mousemove3(e: MouseEvent) {
     var i;
-    if (this.ilp < 57) {
-      this.end = {x: e.layerX, y: e.layerY};   //koniec aktualnej linii
+    if (this.ilp < 57 && this.start != null) {
+      this.end = {x: e.offsetX, y: e.offsetY};   //koniec aktualnej linii
       this.paint3();
    }  
   }
