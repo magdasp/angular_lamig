@@ -448,7 +448,8 @@ export class Task5Component implements OnInit {
     let ctx = this.ctx3;
 
     ctx.beginPath();
-    ctx.clearRect(x,y,250,250);
+    //ctx.clearRect(x,y,250,250);
+    ctx.clearRect(x-30,y-40,590,350);
     ctx.rect(x,y,240,240);
     ctx.rect(x+30,y,30,240);
     ctx.rect(x+90,y,30,240);
